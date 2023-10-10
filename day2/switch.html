@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=prompt("enter number");
+        if(num % 2==0){
+            alert("even number")
+        }
+        else{
+            alert("odd number")
+        }
+
+
+        var year=prompt("enter the year");
+        if( year % 4===0){
+        if(year % 100===0){
+        if(year % 400===0){
+            alert(year + "is a leap year");
+        }else{
+            alert(year + "is not a leap year");
+        }
+        }else{
+            alert(year + "is not a leap year");
+            }
+        }else{
+            alert(year +"is not a leap year");
+        }
+
+        var x=prompt("enter first number");
+        var y=prompt("enter second number");
+        var z=prompt("enter third number");
+        
+        if(x >= y && x >= z){
+            largest=x;
+        }
+        else if (y >= x && y >= z) {
+            largest=y;
+        }
+        else{
+            largest=z;
+        }
+        alert("the largest number is"+largest)
+                
+        var time=prompt("current hour in 24 Format");
+        if(time <=11){
+            alert("Goodmorning");
+            if (time >=13) {
+                alert("Goodevening");    
+            }
+            }else{
+                alert("Goodnight");
+            }
+
+        var Trafficlight=prompt("Enter traffic light");
+
+        switch(Trafficlight){
+            case"red":alert("stop");
+            break;
+            case"yellow":alert("slowdown");
+            break;
+            case"green":alert("Go");
+            break;
+        }
+        
+        var seasons=prompt("enter month");
+
+        switch(seasons){    
+            case"april":alert("summer")
+            break;
+            case"may":alert("summer");
+            break;
+            case"june":alert("summer");
+            break;
+            case"july":alert("monsoon");
+            break;
+            case"august":alert("monsoon");
+            break;
+            case"september":alert("monsoon");
+            break;
+            case"october":alert("monsoon");
+            break;
+            case"november":alert("winter");
+            break;
+            case"december":alert("winter");
+            break;
+            case"january":alert("winter");
+            break;
+            case"february":alert("spring");
+            break;
+
+        }
+
+        var Menu=+prompt("Enter option");
+        switch(Menu){
+            case 1:alert("option 1 is selected");
+            break;
+            case 2:alert("option 2 is fired");
+            break;
+        }
+    </script>
+</body>
+</html>
